@@ -1,0 +1,60 @@
+h1,
+h2,
+h3 {
+    color: gray;
+}
+
+ #main {
+    color: #e60202;
+ }
+
+ h2 > .h2{
+    color: red;
+ }
+
+ .heading {
+    color: green;
+ }
+
+ .list > .item {
+    font-weight: bold;
+ }
+
+ section > p{
+    color: red;
+ }
+
+ .section .section_paragraph {
+    font-size: 28px;
+ }
+
+        /* task 4 */
+ .title_second {
+    color: indigo;    
+ }
+
+ p.first a {
+    color: green;
+ }
+
+p .first a{
+    color: green;
+}
+
+div+p{
+    color: salmon;
+}
+
+    /* task5 */
+        /* black  #000, rgb (0%, 0%, 0%) #000000
+        blue #0000FF, RGB(0, 0, 255), RGB(0%, 0%, 100%), rgba(0, 0, 255, 0.1);
+        green #008000, RGB(0, 128, 0), RGB(0%, 50%, 0%), rgba(0, 0, 128, 0.1);
+        red  #FF0000, RGB(255, 0, 0), RGB(100%, 0%, 0%), rgba(100, 0, 0, 0.1);
+        white #FFFFFF, RGB(255, 255, 255), RGB(100%, 100%, 100%), rgba(100, 100, 100, 0.1);
+        yellow  #FFFF00, RGB(255, 255, 0), RGB(100%, 100%, 0%), rgba(100, 100, 0, 0.1);*/
+
+        /* task 6 */
+
+        .translucent-box {
+            background-color: hsl(0, 100%, 50%, 50%);
+        }
