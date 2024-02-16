@@ -1,0 +1,17 @@
+:root {
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+
+    --footer-text-color: #fff;
+    --footer-bg-color: #000;
+}
+
+body {
+    color: var(--primary-text-color);
+    background: var(--primary-bg-color);
+}
+ 
+footer {
+    color: var(--footer-text-color);
+    background: var(--footer-bg-color);
+}
