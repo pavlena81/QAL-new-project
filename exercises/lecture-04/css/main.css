@@ -58,3 +58,11 @@ div+p{
         .translucent-box {
             background-color: hsl(0, 100%, 50%, 50%);
         }
+
+        body {
+            font-size: 140%;
+        }
+
+        h1{
+            font-size: 240%;
+        }
