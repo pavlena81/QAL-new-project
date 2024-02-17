@@ -1,0 +1,33 @@
+/* task 3 */
+
+body{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.case_first {
+    width: 15em;
+    margin-bottom: 10px;
+    border: 1px solid rgb(228, 210, 210);
+    box-shadow: 8px 8px 5px rgb(231, 230, 230);
+    padding: 8px 12px;
+}
+
+.outer {
+    font-size: 0.98em;
+}
+
+.inner{
+    font-size: 1.58em;
+}
+
+/* task 4 */
+
+.case_secont strong {
+    font-size: 1em;
+}
+
+/* task 5 */
+.list_style {
+    list-style-type: square;
+}
