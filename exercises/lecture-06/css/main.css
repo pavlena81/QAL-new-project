@@ -85,3 +85,13 @@ a.link {
     content: "Cлава ";
 
  }
+ /* task 10 */
+ .hero::after{
+    content: " Слава!";
+ }
+
+ /* task 11 */
+ .cont::before{
+    content: "\0A7";
+
+ }

@@ -71,3 +71,29 @@ a:visited:active {
     content: '';    
     
 } */
+
+/* catalog */
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.bg-dark{
+    background-color: var(--primary-text-color);
+    
+}
+
+.text-white{
+    color: var(--primary-bg-color);
+}
+
+.list-unstyled.categories{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: indigo;           
+}
+
+.list-unstyled .link:hover,
+.list-unstyled .link:focus{
+    background-color: lightgray;
+}
