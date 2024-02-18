@@ -1,0 +1,33 @@
+
+
+.negative { 
+    height: 100px;
+    padding: 10px;
+
+   background-image: linear-gradient(to left, 
+   #b9defe -50%, #73B9EE -10%, #5494EA 0%, #1750AC 100%, #003396 150% );
+}
+
+.percents {
+    height: 100px;
+    padding: 10px;
+
+    background-image: linear-gradient(to bottom, #83f083 2em,
+    #65ed65 4em, #50bd50  8em,
+    #3c8e3c   16em,
+    #285e28   32em,
+    #1e471e 64em,
+    #142f14  128em);
+}
+
+.radial {
+    height: 100px;
+    padding: 10px;
+    /* background-image: radial-gradient(
+        elipse at top, #ffa500 10%, yellow 50%); */
+    background-image: radial-gradient(ellipse at top,
+                orange,
+                transparent),
+                radial-gradient(ellipse at bottom, red, transparent);;
+
+}
