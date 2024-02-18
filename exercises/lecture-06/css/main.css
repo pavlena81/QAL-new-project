@@ -1,0 +1,87 @@
+/* - Відредагуйте файл exercises/lecture-06/css/main.css -
+ Встановіть колір тега a indigo -
+ Встановіть колір тега a gold,якщо це посилання вже відвідали -
+ Встановіть колір тега a salmon,якщо вказівник користувача знаходиться над ним -
+ Встановіть колір тега a red,який є активованим - 
+ Встановіть колір тега a orange,
+який отримав фокус */
+a.link {
+    color:indigo ;
+}
+ 
+ .link:visited {
+    color: gold;
+ }
+
+ .link:hover {
+     color: salmon;
+ } 
+
+ .link:active {
+     color: red;
+     font-size: 18px;
+ } */
+
+ .link:focus{
+    color: orange;
+ }
+ 
+ input{
+  padding: 5px 15px; 
+  height: 40px;  
+  
+  width: 33.3%;
+ }
+
+ input:in-range {  
+    background-color: rgba(0, 255, 0, 0.25);
+ }
+ 
+ input:out-of-range {
+     background-color: rgba(255, 0, 0, 0.25);
+ }
+
+ /* task 4 */
+
+ ul.ex_four_list :first-child{
+    color: orange;
+ }
+
+ .ex_five_list :first-of-type{
+    color: orange;
+ }
+
+ /* task 6 */
+ .ex_six_list :last-of-type{
+    color: orange;
+ }
+
+ /* task 7 */
+ .ex_seven_list :not(.first-item){
+    color: orange;
+ }
+
+ .ex_seven_list :nth-of-type(2){
+    color: black;
+    background-color: yellow;
+ }
+
+ /* task 8 */
+
+ .ex_eight_list :nth-of-type(2){
+    color: orange;
+ }
+
+ .ex_eight_list :nth-child(2n){
+    color: orange;
+ }
+
+ .ex_eight_list :nth-child(2n + 1){
+    color: orange;
+ }
+
+ /* task 9 */
+ .ua::before{
+    content: "Cлава ";
+
+ }
