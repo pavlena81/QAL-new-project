@@ -55,6 +55,17 @@ list-style: none;
     text-decoration: none;
 }
 
+.list-link:hover,
+.list-link:focus {
+    color: #2196f3; 
+}
+
+a:link:active,
+a:visited:active {
+    cursor:pointer;
+
+    color: greenyellow;
+}
 /* .list-link::before,
 .list-link::after {
     content: '';    
