@@ -1,0 +1,81 @@
+.box {
+    width: 300px;
+    padding: 10px;
+    border: dashed 2px green;
+}
+/* task 2 */
+
+/* width `.box` - `384px` */
+
+/* task 3 */
+
+.first-box {
+    width: 200px;
+    height: 100px;
+    border: 8px solid blue;
+    padding: 20px;
+    background: yellow;
+
+}
+/* width `.first-box` - `256px` */
+/* height `.first-box` -  156px*/
+
+/* task 4 */
+.second-box {
+    width: 200px;
+    height: 100px;
+    border: 8px solid blue;
+    background: yellow;
+}
+
+/* width `.second-box` - `216px` */
+/* height `.second-box` -  116px*/
+
+/* task 5 */ 
+/* div {
+    box-sizing: content-box;
+    width: 200px;
+    border: 8px solid blue;
+    padding: 20px;
+    background: yellow;
+} */
+
+/* width `div .box - 364px */
+/* width `div .first-box - 256px */
+/* width `div .second-box - 256px */
+
+/* task 6 */
+/* div {
+    box-sizing: border-box;
+    width: 200px;
+    border: 8px solid blue;
+    padding: 20px;
+    background: yellow;
+} */
+/* the content width of the div element `div .box - 276 (300-20-4) px */
+/* the content width of the div element `div .first-box - 144 px  (200-40-16)*/
+/* the content width of the div element `div .second-box - 144 px  (200-40-16)*/
+
+/* task 7 */
+
+#example1 {
+    background-clip: border-box;
+}
+
+#example2 {
+    background-clip: padding-box;
+}
+
+#example3 {
+    background-clip: content-box;
+}
+
+/* task 8 */
+.h1 {
+    display: inline-block;
+}
+
+h1 > span{
+    display: inline-block;
+    word-wrap: break-word;
+}
