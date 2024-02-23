@@ -1,0 +1,66 @@
+body {
+    --padding: 5vw;
+    --max-width: 180ch;       
+}
+
+.wrapper{
+    display: grid;        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            "header  header  header"
+            ". main main"
+            "footer  footer  footer";
+
+        /* height: 90vh; */        
+        color: #444;
+
+        font-family: Roboto;
+        font-weight: 500;
+}
+
+.header {
+    grid-area: header;
+    border-bottom: 1px solid rgb(66, 79, 114); 
+    padding: 1vh;
+    
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    border-top: 1px solid rgb(33, 36, 61);
+    padding: 1vh;
+}
+
+
+.container{    
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.flexbox{
+    --min: 30ch;   
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    padding: var(--padding)
+}
+
+.card{     
+    list-style: none;
+      
+    max-width: var(--max-width);    
+    flex: 1;
+    flex-basis: var(--min);
+}
+
