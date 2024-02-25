@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: #000;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    padding: 1em;
+}
+
+/* Якщо ширина вікна перегляду становить 768 пікселів,
+розмір шрифту має дорівнювати 20 пікселям */
+@media screen and (max-width: 768px){   
+        body {
+            font-size: clamp(16px, calc(16px + (20 - 16) * ((100vw - 320px) / (768 - 320))), 20px);
+            background: rgb(252, 228, 228);          
+        }
+        /* font-size: 20px; */       
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+    body {  
+        /* .fluid {
+            font-size: calc([value-min] + ([value-max] - [value-min]) * ((100vw - [breakpoint-min]) / ([breakpoint-max] - [breakpoint-min])));
+            } */
+        font-size: clamp(20px, calc(20px + (36 - 20) * ((100vw - 769px) / (1920 - 796))), 36px);
+        background: rgb(245, 196, 245);        
+    }
+}
+
+@media screen and (min-width: 1921px){
+    body{
+        font-size: 48px;
+        background: rgb(197, 233, 125);
+    }
+}
+
