@@ -35,23 +35,33 @@
 
     <p style="color:blue; font-size:24px; --bgColor: yellow; ">This is my paragraph</p>
     
+
+    <!-- 
+    		який колір буде мати текст This is my paragraph і чому.
+    	   Колір буде синім, бо пріоритет вище у вбудованому стилі-->
     <!-- 3 correct mistakes -->
-    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
-    <p>The most exciting paragraph on the page. One of a kind!</p>
-    
-    <div id="exciting">The most exciting paragraph on the page. One of a kind!</div>
-    
+
     <style>
         #exciting {
             background: #f69d3c;
             border: 1px solid #696969;
             padding: 10px;
         }
-    </style>
+    </style> 
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p>The most exciting paragraph on the page. One of a kind!</p>
+    
+    <div id="exciting">The most exciting paragraph on the page. One of a kind!</div>
+    
+    
     <!-- 3 -->
 
 
-    <!--task 4  -->
+    <!--task 4  Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. -->
+    <!-- background: var(--bgColor); вказує на використання змінної CSS --bgColor для встановлення 
+        значення властивості background. властивість background встановлюється як var(--bgColor), браузер шукає значення 
+        для цієї змінної в поточному області видимості. запис background: var(--bgColor); означає, що фоновий колір елемента буде встановлено в той колір,
+         який був визначений для змінної --bgColor(змінна буде видимою), а для змінної значення не було задане, була задана лише назва змінної, тому колір bg на body - не змінився. -->
     <!-- Додайте тут 2 елеиенти div: -->
     <div>
         <h3>Div 1</h3>

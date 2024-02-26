@@ -5,7 +5,7 @@
 }
 /* task 2 */
 
-/* width `.box` - `384px` */
+/* width `.box` - (width + padding + border).`344px` */
 
 /* task 3 */
 
@@ -76,6 +76,6 @@
 }
 
 h1 > span{
-    display: inline-block;
-    word-wrap: break-word;
+    display: inline-block;   
+    width: min-content
 }

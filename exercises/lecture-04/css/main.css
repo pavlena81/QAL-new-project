@@ -8,7 +8,7 @@ h3 {
     color: #e60202;
  }
 
- h2 > .h2{
+ h2.h2{
     color: red;
  }
 
@@ -27,11 +27,17 @@ h3 {
  .section .section_paragraph {
     font-size: 28px;
  }
+ /* Тут ви все зробили правильно,
+але можна простіше: .section p {
+   font-size: 28px;
+} задала клас p - тільки тому, що на сторінці ще може бути section .p - щоб стилі застосувались лише для p з таким класом */
+      
 
-        /* task 4 */
+/* task 4 */
  .title_second {
     color: indigo;    
  }
+ 
 
  p.first a {
     color: green;
@@ -41,7 +47,7 @@ p .first a{
     color: green;
 }
 
-div+p{
+div ~ p{
     color: salmon;
 }
 
