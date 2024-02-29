@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+.element {
+    background-color: #0074d9;
+    height: 20px;
+    width: 20px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    line-height: 2px;
+    transform: scale(10);
+}
+
+/* .element:hover {
+transform: scale(10);
+} */
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
