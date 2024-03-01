@@ -1,0 +1,21 @@
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: #3d9970;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    padding: 5px;
+    animation: shimmy 3s infinite alternate;
+    
+    font-family: "Roboto", sans-serif;
+}
+
+
+@keyframes shimmy {
+    0% {transform: translate(0, 0);}
+
+    100% { transform: translate(20px, 50px);}
+}
