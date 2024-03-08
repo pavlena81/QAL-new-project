@@ -68,11 +68,11 @@ console.log(typeof numStr);
     
     // let d = b++; // d=1 d буде дорівнювати 1, оскільки b спочатку було 1, але після присвоєння b=2, оскільки змінна збільшилась на 1
    
-//7
+//task 7
     let a = 2; // a *= 2 множить значення a на 2 і присвоює його назад до a. після виконання a *= 2, a буде мати значення 4
     let x = 1 + (a *= 2);// x=5
     
-//8
+//task 8
 'use strict';
 
 "" + 1 + 0 //10;
@@ -103,6 +103,26 @@ null + 1//1;
 undefined + 1//NaN;
    
 NaN + 1  //NaN;
+
+//task 9
+'use strict';
+    // скоротити цей код за допомогою операторів += і *=:
+    let n = 2;
+    n += 5;//n = n + 5;
+
+    n *= 2;//n = n * 2;
   
-    
-    
+//task 10
+    //   let n1 = "   123   ";
+    //   let n2 = "123z";
+    //   let n3 = true;
+    //   let n4 = false;
+
+    let n1 =parseInt("   123   ");
+    let n2 = parseInt("123z");
+    let n3 = Number(true);
+    let n4 = Number(false);
+      
+      console.log(n1, n2, n3, n4);
+      // Перетворити змінні n1, n2, n3, n4 на числа  
+      
