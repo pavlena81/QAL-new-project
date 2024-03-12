@@ -60,13 +60,56 @@ let minNumber;
 function min(min1, min2) {
     if (min1 > min2) {
         return minNumber = min2;
-    } else {
+    } else if (min1<min2){
         return minNumber = min1;
+    }else if (min1==min2){
+        return min1 || min2
     }
     
 }
  
 console.log(min(2, 5));
-console.log((3, -1));
+console.log(min(3, -1));
 console.log(min(2, 2));
-  
+// ===реалізуйте функцію min, використовуючи тернарний оператор
+
+const min1 = 2;
+const min2 = 2;
+const minNumbers = min1 > min2
+    ? min2
+    : min1
+// console.log('\n' + '-'.repeat(10));
+
+console.log(minNumbers);
+
+// task 3 ====== Напишіть функцію pow(x,n), яка повертає x у ступені n. Або, іншими словами, 
+// множить x на себе n разів і повертає результат.У цьому завданні функція 
+// повинна підтримувати лише натуральні значення n: цілі числа від 1.
+// pow(3, 2) = 3 * 3 = 9
+// pow(3, 3) = 3 * 3 * 3 = 27
+// pow(1, 100) = 1 * 1 * ...* 1 = 1
+
+function mathPow(x, y) {
+    return Math.pow(x,y)
+}
+
+console.log(mathPow(1, 100));
+
+// ======Створіть сценарій, де спочатку користувачу пропонують ввести x і n, а потім показують результат pow(x,n),
+//  або повідомлення про неправильне значення параметра n.
+
+
+
+function mathPow2(x, n) {
+    
+    if (!isNaN(n) && n >= 0) {
+        return Math.pow(x, n);
+    } else {
+        return "Параметр n повинен бути числом >0";
+    }
+}
+let x = parseFloat(prompt('Введіть значення x:'));
+let n = parseFloat(prompt('Введіть значення n:'));
+
+let res = mathPow2(x, n);
+console.log(res);
