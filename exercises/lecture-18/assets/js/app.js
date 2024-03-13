@@ -113,3 +113,41 @@ let n = parseFloat(prompt('Введіть значення n:'));
 
 let res = mathPow2(x, n);
 console.log(res);
+
+// task 5 ======Переписати функцію ask, використовуючи функцію стрілок:
+function ask(question, yes, no) {
+    if (confirm(question)) {
+        yes();
+    }
+    else {
+        no();
+    }
+}
+const askArrow = (question, yes, no) => {
+    if (confirm(question)) {
+        yes();
+    }
+    else { no(); }
+}
+ 
+// task 6=====Переписати функцію ask, використовуючи функціональний вираз:
+
+const askFunc = function ask(question, yes, no) {
+    if (confirm(question)) { yes(); }
+  else {no();} 
+}
+// task 7 ===== 
+// Яким чином виконати виклик функцій A() і C(), щоб на консолі отримати такий 
+// результат A was called C was called foo
+
+function A() { console.log('A was called'); return undefined;}
+function B() { console.log('B was called'); return false;}
+function C() { console.log('C was called'); return "foo"; }
+
+
+console.log(C(A()));
+ 
+// ====Яким чином виконати виклик функцій B() і C(), щоб на консолі отримати такий 
+// результат B was called C was called foo
+
+console.log(C(B()));
