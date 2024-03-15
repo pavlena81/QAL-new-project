@@ -133,4 +133,62 @@ console.log(sentence.includes('look on'));//true;
 
 console.log(sentence.indexOf('look on', 8));//-1;
 
+// task 13 === Знайти індекс символу 'l'
+// Знайти індекс символу 'l', починаючи з 3-ї позиції
+// Знайти індекс символу 'L'
+let sentenCe = 'Always look on the bright side of life';
+
+console.log(sentenCe.indexOf('l'));//1
+
+console.log(sentenCe.indexOf('l', 3));//
+
+console.log(sentenCe.indexOf('L'));//-1
+
+// task 14 === 
+// Отримати підрядок 'look on the bright side of life'
+// Отримати підрядок 'Always'
+// Отримати підрядок 'look'
+console.log(sentenCe.slice(7));
+
+console.log(sentenCe.slice(0, 6));
+
+console.log(sentenCe.slice(7, 11));
+
+// task 15 === 
+// Створити регулярний вираз, який призначений для перевірки імені користувача,
+//  що може містити цифри, літери у нижньому регістрі та символи - і _. 
+// Довжину імені користувача встановити від 8 до 16 знаків.
+
+const userNameRegExp = /^[a-z0-9_-]{8,16}$/i;
+
+const userName = prompt('enter your name');
+
+const matchUserName = userName.match(userNameRegExp);
+
+if ( matchUserName!== null){
+    console.log('user name is valid');
+} else {
+    console.log('user name is unvalid: can contain numbers, lowercase letters, and the symbols - and _. The length of the user name can be set from 8 to 16 characters.');
+}
+
+// task 16 ==== Створити регулярний вираз, 
+// який призначений для перевірки email на коректність.
+const regExpEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// task 17 ====
+// Напишіть функцію truncateText скорочення тексту до 50 символів,
+//  використовуючи метод substring
+// Напишіть функцію truncateText скорочення тексту до 50 символів,
+//  використовуючи метод substr
+
+let seNtence = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
+
+function truncateText() {
+    return seNtence.substring(0, 50);
+}
+console.log(truncateText());
+
+// function truncateText() {
+//     return seNtence.substr(0,50)
+// }
 
