@@ -27,3 +27,110 @@ console.log(str3[6]);//j
 console.log(str3[str3.length - 1]);//t;
 const lastStr3 = str3.charAt(str3.length-1);
 console.log(lastStr3);
+
+// task 5 === Напишіть три варіанти функції lastChar, 
+// що повертає останній символ рядка
+
+function lastChar() {
+    let string = 'Return symbol';
+    return string.charAt(string.length - 1);
+}
+console.log(lastChar());
+
+
+const lastChar1 = () => d[d.length - 1];
+
+let d = 'Home';
+
+console.log(lastChar1());
+
+const lastChar2 = function () {
+    let str = 'Hello';
+    return str.slice(-1); 
+}
+
+console.log(lastChar2());
+
+// task 6 ==== Використовуючи метод concat, 
+// вивести на консоль: When candles are out, all cats are grey
+
+
+let aa = 'When candles are out,';
+let bb = 'all cats are grey.';
+
+console.log(aa.concat(bb));
+
+// task 7 ==== Використовуючи змінні a, b, fact,
+//  змінити значення fact та вивести його на консоль, 
+// щоб результат виглядав так: Fifteen is the same as 15
+
+let fact = "Fifteen is the same as"
+let a = 5;
+let b = 10;
+
+console.log(fact.concat(' ', a + b));
+ 
+// task 8 ==== Напишіть функцію getFullName, що повертає результат: "Tom Cat"
+
+let firstName = "Tom";
+let lastName = "Cat";
+
+function getFullName() {
+
+    return firstName.concat(' ',lastName)
+}
+console.log(getFullName());
+
+// task 9 === Напишіть функцію greeting, 
+// що використовує виклик функції getFullName
+//  та повертає такий результат: Hello, Tom Cat!
+
+function greeting(callback) {
+    return `Hello, ${callback()}!`
+}
+
+console.log(greeting(getFullName));
+
+
+// task 10 === Використовуючи функцію greeting, створити такий шаблон:
+
+// <div><h1>Hello, Tom Cat!</h1></div>
+
+const title = document.createElement('h1');
+
+title.textContent = `${greeting(getFullName)}`
+document.body.append(title);
+
+// task 11 === 
+let string1 = "  The name of our game  ";
+
+// Потрібно отримати такі результати
+// "The name of our game"
+// "The name of our game  "
+// "  The name of our game"
+
+console.log(string1.trim());
+console.log(string1.trimStart());
+console.log(string1.trimEnd());
+
+const phoneNumber = '\t  555-123\n ';
+// Потрібно отримати такі результати
+// => '555-123'
+// => '555-123 \n'
+console.log(phoneNumber.trim());
+console.log(phoneNumber.trimStart());
+
+// task 12 ====
+// Перевірити, чи містить рядок значення 'look up'
+// Перевірити, чи містить рядок значення 'look on'
+// Перевірити, чи містить рядок значення 'look on'Б
+//  починаючи з 8 - ї позиції
+
+let sentence = 'Always look on the bright side of life';
+console.log(sentence.includes('look up'));//false;
+ 
+console.log(sentence.includes('look on'));//true;
+
+console.log(sentence.indexOf('look on', 8));//-1;
+
+
