@@ -60,3 +60,56 @@ const person2 = createPerson('Max');
 
 person1.introduceSelf();
 person2.introduceSelf();
+
+// task 6 === 
+// Створити функцію-конструктор Person,
+//  що приймає аргумент name та повертає новий об'єкт з властивістю 
+// name та методом introduceSelf.Створити за допомогою Person
+// 2 екземпляри об'єкта mary та tom.
+
+// визначити, чи містить об'єкт mary властивість під назвою prop.
+
+function Person(name) {
+    return {
+        name: name,
+        introduceSelf() {
+            console.log(`My name is {this.name}`);
+        },
+    }
+}
+
+const mary = new Person('Marry');
+console.log(mary.hasOwnProperty('prop'));
+
+const tom = new Person('Tom');
+
+// task 7 ====
+
+function DirtyMartini() {
+    return {
+        english_please() {
+            console.log(`ingredients:
+        6 fluid ounces gin
+        1 dash dry vermouth (0.0351951ml) 
+        1 fluid ounce brine from olive jar
+        4 stuffed green olives`)
+        },
+        excuse_my_french() {
+            console.log(`ingrédients:  
+        170.4786 ml de gin
+        1 trait de vermouth sec (0.0351951ml) 
+        28.4131 ml de saumure du pot d'olive
+        4 olives vertes farcies`)
+        }
+    }
+}
+
+const myMartini = DirtyMartini();
+console.log(typeof myMartini);
+myMartini.excuse_my_french();
+
+myMartini.english_please();
+
+
+
+
