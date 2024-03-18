@@ -109,7 +109,3 @@ console.log(typeof myMartini);
 myMartini.excuse_my_french();
 
 myMartini.english_please();
-
-
-
-
