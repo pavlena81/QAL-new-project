@@ -77,4 +77,61 @@ for (const item of containers) {
     console.log(item.firstElementChild.firstElementChild);
 }
 
+// task 8 ===
+// Знайти колекцію всіх елементів з селектором '.container header', зберегти її в змінній headers. Використовуючи цикл for для отриманої колекції headers,
+//  замінити заголовки h1 таким чином
+// перший залишити h1
+// другий замінити на h2
+// третій замінити на h3
+// четвертий замінити на h4 зберегти початкові атрибути id та class
 
+ const headers = document.querySelectorAll('.container header');
+console.log(headers);
+
+
+for (let i = 0; i < headers.length; i++) {
+    const newHeader = document.createElement(`h${i + 1}`); 
+
+    newHeader.textContent = headers[i].textContent;
+    newHeader.id = headers[i].id;
+    newHeader.className = headers[i].className;     
+    
+    headers[i].parentNode.replaceChild(newHeader, headers[i]);
+    
+    console.log( newHeader);
+}
+
+// ======
+// for (let i = 0; i < headers.length; i++) {
+
+//     console.log(headers[i].tagName);
+//     console.log(headers[i].children);
+
+//     let newTagName;
+//     switch (i) {
+//         case 0:
+//             newTagName = 'h1';
+//             break;
+//         case 1:
+//             newTagName = 'h2';
+//             break;
+//         case 2:
+//             newTagName = 'h3';
+//             break;
+//         case 3:
+//             newTagName = 'h4';
+//             break;
+//         default:
+//             newTagName = 'h5'; // 
+//             break;
+//     }
+
+//     const newHeader = document.createElement(newTagName);
+
+//     newHeader.textContent = headers[i].textContent;
+//     newHeader.id = headers[i].id;
+//     newHeader.className = className; 
+
+//     headers[i].parentNode.replaceChild(newHeader, headers[i]);
+//     console.log( newHeader);
+// }
