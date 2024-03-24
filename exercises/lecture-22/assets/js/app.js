@@ -1,4 +1,4 @@
-const classes = ['first', 'second', 'third', 'fourth'];
+// const classes = ['first', 'second', 'third', 'fourth'];
 
 // task 1 ====
 // Отримати всі елементи з тегом h1. Вивести на консоль тип отриманого об'єкту та його розмір. Використовуючи цикл for, вивести на консоль
@@ -88,18 +88,27 @@ for (const item of containers) {
  const headers = document.querySelectorAll('.container header');
 console.log(headers);
 
+const classes = ['first', 'second', 'third', 'fourth'];
 
 for (let i = 0; i < headers.length; i++) {
     const newHeader = document.createElement(`h${i + 1}`); 
 
     newHeader.textContent = headers[i].textContent;
     newHeader.id = headers[i].id;
-    newHeader.className = headers[i].className;     
+    newHeader.className = headers[i].className;   
+    
+    newHeader.classList.add(...headers[i].classList,classes[i]);
     
     headers[i].parentNode.replaceChild(newHeader, headers[i]);
     
-    console.log( newHeader);
+    console.log(newHeader);
+    console.log(newHeader.classList);
 }
+ 
+// Використовуючи цикл for для колекції headers та масив classes, 
+// додати до отриманих тегів - заголовків класи таким чином
+
+
 
 // ======
 // for (let i = 0; i < headers.length; i++) {
