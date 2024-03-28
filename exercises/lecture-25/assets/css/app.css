@@ -1,0 +1,39 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; 
+    font-size: 18px;   
+}
+
+table {
+    width: 30rem;
+
+    tr {
+        width: 100%;
+        background-color: blue;
+        color: azure;
+    }
+
+    thead {
+        background-color: blue;
+        color: azure;
+    }
+
+    td {
+        text-align: center;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+.list-link {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: blue;
+}
+
+.list-link:hover {
+    color: darkblue;
+}
