@@ -35,9 +35,9 @@ function checkAge(age) {
 // task 1.4 ====1.4.1 Перепишіть функцію checkAge, використовуючи '?'
 
 let age = 22
-const type = age > 18 ? "true" : confirm("Did parents allow you?")
+const type = age > 18 ? true : confirm("Did parents allow you?")
  
-//console.log(type);
+console.log(type);
 
 // =======1.4.2 Перепишіть функцію checkAge, використовуючи '||'
 function checkage(age) {
@@ -57,16 +57,16 @@ console.log(checkage(15));
 
 let minNumber; 
 
-function min(min1, min2) {
-    if (min1 > min2) {
-        return minNumber = min2;
-    } else if (min1<min2){
-        return minNumber = min1;
-    }else if (min1==min2){
-        return min1 || min2
-    }
+// function min(min1, min2) {
+//     if (min1 > min2) {
+//         return minNumber = min2;
+//     } else if (min1<min2){
+//         return minNumber = min1;
+//     }else if (min1==min2){
+//         return min1 || min2
+//     }
     
-}
+// }
  
 console.log(min(2, 5));
 console.log(min(3, -1));
@@ -77,7 +77,12 @@ const min1 = 2;
 const min2 = 2;
 const minNumbers = min1 > min2
     ? min2
-    : min1
+    : min1 
+
+ // another version
+function min(min1, min2) {
+return min1<min2 ? min1 : min2;
+}
 // console.log('\n' + '-'.repeat(10));
 
 console.log(minNumbers);
@@ -102,7 +107,7 @@ console.log(mathPow(1, 100));
 
 function mathPow2(x, n) {
     
-    if (!isNaN(n) && n >= 0) {
+    if (!isNaN(n) && n >= 1) {
         return Math.pow(x, n);
     } else {
         return "Параметр n повинен бути числом >0";
@@ -132,10 +137,16 @@ const askArrow = (question, yes, no) => {
  
 // task 6=====Переписати функцію ask, використовуючи функціональний вираз:
 
-const askFunc = function ask(question, yes, no) {
-    if (confirm(question)) { yes(); }
-  else {no();} 
+// const askFunc = function ask(question, yes, no) {
+//     if (confirm(question)) { yes(); }
+//   else {no();} 
+// }
+// another vers
+
+const askFunc = (question, yes, no) => {
+    confirm(question) ? yes(): no()
 }
+
 // task 7 ===== 
 // Яким чином виконати виклик функцій A() і C(), щоб на консолі отримати такий 
 // результат A was called C was called foo
