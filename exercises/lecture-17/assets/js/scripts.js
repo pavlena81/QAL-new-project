@@ -20,16 +20,18 @@
 //   NaN == NaN//false 
   
 //task 2 
-// let x = 3;
-// let y = 4;
-// let z = 5;
+let x = 3;
+let y = 4;
+let z = 5;
 
-// x ||= y;// 3
-// x || (y = z);// 3
-// x &&= y; //4
-// x && (y = z);//5 
-// x ??= y;//3 
-// x ?? (y = z);//3 
+x ||= y;// 3
+x || (y = z);// 3
+x &&= y; //4
+x && (y = z);//5 
+x ??= y;//4 
+console.log(x ??= y);
+x ?? (y = z);//4 
+console.log(x ?? (y = z));
 
 //task 3   
 
@@ -60,15 +62,27 @@ if (day === "понеділок" || day === "monday") {
 // Напишіть версію програми, застосовуючи оператор switch
 let dayWeek = (prompt("Enter the day of the week")).toLowerCase();
 
-switch (dayWeek) {
-    case (dayWeek === "понеділок" || dayWeek === "monday"):
-        alert('Start of the work week!');
-        break;
-    case (dayWeek === "п'ятниця" || dayWeek === "friday"):
-        alert('End of the work week!');
-        break;
+// switch (dayWeek) {
+//     case (dayWeek === "понеділок" || dayWeek === "monday"):
+//         alert('Start of the work week!');
+//         break;
+//     case (dayWeek === "п'ятниця" || dayWeek === "friday"):
+//         alert('End of the work week!');
+//         break;
     
-    default:(alert('A regular day'))
+//     default:(alert('A regular day'))
+// } 
+switch (dayWeek) {
+    case "Monday":
+  case "Понеділок":
+    alert("Start of the work week!");
+    break;
+  case "Friday":
+  case "П'ятниця":
+    alert("End of the work week!");
+    break;
+  default:
+    alert("A regular day");
 }
  
 //task 5
