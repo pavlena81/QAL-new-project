@@ -72,9 +72,13 @@ console.log(fact.concat(' ', a + b));
  
 // task 8 ==== Напишіть функцію getFullName, що повертає результат: "Tom Cat"
 
-let firstName = "Tom";
+let firstName ="Tom";
 let lastName = "Cat";
 
+// function getFullName (firstName, lastName) {
+// return firstName +" "+ lastName;
+// }
+// console.log(getFullName(firstName, lastName));
 function getFullName() {
 
     return firstName.concat(' ',lastName)
@@ -136,23 +140,23 @@ console.log(sentence.indexOf('look on', 8));//-1;
 // task 13 === Знайти індекс символу 'l'
 // Знайти індекс символу 'l', починаючи з 3-ї позиції
 // Знайти індекс символу 'L'
-let sentenCe = 'Always look on the bright side of life';
+// let sentenCe = 'Always look on the bright side of life';
 
-console.log(sentenCe.indexOf('l'));//1
+console.log(sentence.indexOf('l'));//1
 
-console.log(sentenCe.indexOf('l', 3));//
+console.log(sentence.indexOf('l', 3));//
 
-console.log(sentenCe.indexOf('L'));//-1
+console.log(sentence.indexOf('L'));//-1
 
 // task 14 === 
 // Отримати підрядок 'look on the bright side of life'
 // Отримати підрядок 'Always'
 // Отримати підрядок 'look'
-console.log(sentenCe.slice(7));
+console.log(sentence.slice(7));
 
-console.log(sentenCe.slice(0, 6));
+console.log(sentence.slice(0, 6));
 
-console.log(sentenCe.slice(7, 11));
+console.log(sentence.slice(7, 11));
 
 // task 15 === 
 // Створити регулярний вираз, який призначений для перевірки імені користувача,
