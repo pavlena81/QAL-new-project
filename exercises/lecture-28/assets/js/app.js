@@ -12,28 +12,29 @@ function handleSubmit(event) {
 
     errorMessage.innerHTML = '';
   
-    try {      
-  
+    try { 
+    
     if (username === "" || email === "" || password === "") {
         
-    throw new Error('Please fill in all fields and enter a correct data.');   
-    // return console.log("Please fill in all the fields!");
-  }
-  if (!emailIsValid(email)) {
-    throw new Error('Please enter a valid email address.');
-    // return;
-  }
+        throw new Error('Please fill in all fields and enter a correct data.');   
+    
+    }
+    if (!emailIsValid(email)) {
+        throw new Error('Please enter a valid email address.');
+    
+    }
     if (!passwordIsValid(password)) {
        throw new Error('Please enter a valid password.The password have to contain at least 8 characters(Password123!)')
     }
 
-  console.log(`Username: ${username},  Email: ${email}, Password: ${password}`);
+        console.log(`Username: ${username},  Email: ${email}, Password: ${password}`);
         form.reset();
+
     } catch (error) {
         
         displayErrorMessage(error.message);
         console.log('Please fill in all fields and enter a correct data....')
-     }
+    }
 }
 
 // === 
