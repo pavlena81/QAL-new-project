@@ -9,20 +9,31 @@ function handleSubmit(event) {
     const username = form.elements.username.value;
     const email = form.elements.email.value;
     const password = form.elements.password.value;
+
+    errorMessage.innerHTML = '';
   
-  if (username === " " || email === "" || password === "") {
-    return console.log("Please fill in all the fields!");
+    try {      
+  
+    if (username === "" || email === "" || password === "") {
+        
+    throw new Error('Please fill in all fields and enter a correct data.');   
+    // return console.log("Please fill in all the fields!");
   }
   if (!emailIsValid(email)) {
-    alert('Please enter a valid email address.');
-    return;
+    throw new Error('Please enter a valid email address.');
+    // return;
   }
     if (!passwordIsValid(password)) {
-        alert('Please enter a valid password.')
+       throw new Error('Please enter a valid password.The password have to contain at least 8 characters(Password123!)')
     }
 
   console.log(`Username: ${username},  Email: ${email}, Password: ${password}`);
-  form.reset();
+        form.reset();
+    } catch (error) {
+        
+        displayErrorMessage(error.message);
+        console.log('Please fill in all fields and enter a correct data....')
+     }
 }
 
 // === 
@@ -35,3 +46,10 @@ function passwordIsValid(password) {
    return pattern.test(password)
 }
 // ========== error;
+const errorMessage = document.getElementById('errorMessages');
+
+function displayErrorMessage(message) {
+  const errorMes = document.createElement('p');
+  errorMes.textContent = message;
+  errorMessage.appendChild(errorMes);
+}
