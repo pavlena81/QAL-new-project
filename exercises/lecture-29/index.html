@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error handling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>Check Auth</h1>
+    <button class="check-auth">Check Auth</button>
+
+    <dialog id="dialogBox">
+        <header>
+            <h2 class="header">Something went wrong</h2>
+            <button onclick="closeDialog()" id="closeDialogHeader">&#x2716</button>
+        </header>
+
+        <section>
+            <p class="message"></p>
+        </section>
+
+        <footer>
+            <button onclick="closeDialog()" id="closeDialogFooter">Close dialog</button>
+            <button id="signButton">Login or sign up here</button>
+        </footer>
+    </dialog>
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
