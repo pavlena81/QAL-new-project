@@ -45,3 +45,22 @@ body {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.check-auth {
+    padding: 10px 20px;
+    background-color: #6ab7c5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.check-auth:hover {
+    background-color: #24979b;
+}
+
+.check-auth:focus {
+    outline: none;
+}
