@@ -1,0 +1,11 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.countdown {
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 0px;
+}
