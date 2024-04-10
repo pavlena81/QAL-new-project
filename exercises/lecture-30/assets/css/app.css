@@ -2,6 +2,8 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: medium;
+
+    padding: 20px;
 }
 
 .countdown {
@@ -9,3 +11,7 @@ body {
     font-size: 40px;
     margin-top: 0px;
 }
+form{
+    margin-bottom: 15px;
+}
+

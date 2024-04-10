@@ -50,14 +50,13 @@ req.send();
 
 function handleResponse(response) {
     
-     const markup = response
+     const template = response
     .map(({title, body}) => {
-      return `<li>
-          <h2>${title.slice(0, 30)}</h2>          
-          <p>${body}</p>
-        </li>`;
+      return `<h3>${title}</h3>
+              <div>${body}</div>`;
     })
     .join("");
-  demo.innerHTML = markup;
+  demo.innerHTML = template;
 }
-  
+ 
+
