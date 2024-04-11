@@ -8,19 +8,19 @@ const template = (item) => `
 
 const xhrPromise = (method, url) => {
   const promise = new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.send();
+    const req = new XMLHttpRequest();
+    req.open(method, url);
+    req.send();
   
-    xhr.onload = () => {
-      if (xhr.status >= 400) {
-        reject(xhr.response);
+    req.onload = () => {
+      if (req.status >= 400) {
+        reject(req.response);
       } else {
-        resolve(xhr.response);
+        resolve(req.response);
       }
     };
 
-    xhr.onerror = () => {
+    req.onerror = () => {
       reject('Something went wrong!');
     };   
   });
@@ -36,5 +36,21 @@ xhrPromise("GET", url)
         result += template(item)
     })
     document.getElementById("blog").innerHTML = result;
+    
+})
+
+
+xhrPromise("GET", 'https://jsonplaceholder.typicode.com/users')
+.then(response => {
+    const posts = JSON.parse(response)
+		
+    const template= posts.map(({ username, name}) => {
+        
+        console.log(username);
+        return `
+                <p>Author:  <strong><span class="author" data-id="">${name}</span></strong></p>`
+    })
+    .join("");
+    document.getElementById("blog").innerHTML = template;
     
 })
