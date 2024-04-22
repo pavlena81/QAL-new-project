@@ -1,6 +1,9 @@
 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import {Gallery} from './components/Gallery/Gallery'
+import {Navbar} from './components/Navbar/Navbar'
+import {Footer} from './components/Footer/Footer'
 import './App.css'
 
 const jsxElement = <h1>I am a JSX element</h1>;
@@ -21,11 +24,6 @@ const newFragment = (
 </>
 )
 
-const footer = (
-    <footer>
-    <p>Copyright 2024</p>
-    </footer>
-) 
 
 function App() {
   
@@ -33,20 +31,21 @@ function App() {
   return (
     <>
       <div>
+        <Navbar />
+        <Gallery/>
+
         {jsxElement}
         {header}
         {newFragment}
 
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
+        
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
      
-      
-      {footer}
+      <Footer/>
+     
     </>
   )
 }
