@@ -5,6 +5,7 @@ import {Gallery} from './components/Gallery/Gallery'
 import {Navbar} from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
 import { Blog } from './components/Blog/Blog'
+import { Post } from './components/Post/Post'
 import './App.css'
 
 const jsxElement = <h1>I am a JSX element</h1>;
@@ -42,7 +43,8 @@ function App() {
     <>
       <div>
         <Navbar />
-        <Gallery/>
+        <Gallery />
+        <Post/>
 
         {jsxElement}
         {header}
