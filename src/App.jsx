@@ -1,11 +1,11 @@
 
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import {Gallery} from './components/Gallery/Gallery'
 import {Navbar} from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
 import { Blog } from './components/Blog/Blog'
 import { Post } from './components/Post/Post'
+import { Header } from './components/Header/Header'
 import './App.css'
 
 const jsxElement = <h1>I am a JSX element</h1>;
@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <div>
-        <Navbar />
+        <Header />
         <Gallery />
         <Post/>
 
