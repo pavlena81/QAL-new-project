@@ -1,19 +1,16 @@
 // src/components/Blog.tsx
 
 import React from "react"; 
+import { Post } from "../Post/Post";
 
-export const Blog =({post}) => {   
+
+export const Blog = () => { 
     
+        // if (!post) {
+        //     return <div>Loading...</div>;      }
+
        return(
-        <article className='post'>
-            <div className='cover-container'>
-              <img src={post.cover} alt={post.title} />
-            </div>
-            <div className='post-footer'>
-              <h3>{post.title} {post.id}</h3>
-              <p>{post.content}</p>
-            </div>
-        </article>
+       <Post/>
         );
     
 }

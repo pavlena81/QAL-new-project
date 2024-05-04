@@ -1,63 +1,29 @@
 
-import reactLogo from './assets/react.svg'
-import {Gallery} from './components/Gallery/Gallery'
-import {Navbar} from './components/Navbar/Navbar'
-import { Footer } from './components/Footer/Footer'
-import { Blog } from './components/Blog/Blog'
-import { Post } from './components/Post/Post'
+import { Route, Routes } from "react-router-dom";
+// import { Post } from './components/Post/Post'
 import { Header } from './components/Header/Header'
+import { MyBlogs } from "./pages/Blogs";
+import { Home } from "./pages/Home";
+import { Galleries } from "./pages/Galleries";
+import {About} from "./pages/About"
 import './App.css'
 
-const jsxElement = <h1>I am a JSX element</h1>;
-
-const header = (
-        <header>
-        <h1>Welcome to React</h1>
-        <h2>Getting Started React</h2>
-        <h3>JavaScript Library</h3>
-        </header>
-)
-
-const newFragment = (  
-  <>
-    <h1>Welcome to React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
-</>
-)
-
-// to task 35//
-let post = {
-    id: 1,
-    title: "Programming Algorithm",
-    content: `The word Algorithm means “a process or set of rules to be followed in calculations or other problem-solving operations”. Therefore Algorithm refers to a set of rules/instructions that step-by-step define how a work is to be executed upon in order to get the expected results.`,
-    cover: "/vite.svg",
-    likes: 5
-  };
 
 // ========
 function App() {
   
 
   return (
-    <>
-      <div>
-        <Header />
-        <Gallery />
-        <Post/>
-
-        {jsxElement}
-        {header}
-        {newFragment}
-
-        
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <Blog post={post} key={post.id}/>
-     
-      <Footer/>
+    <>     
+        <Header />        
+      {/* <Blog post={post} key={post.id}/> */}
+          
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blogs" element={<MyBlogs />} /> 
+        <Route path="/galleries" element={<Galleries />} />
+        <Route path="/about" element={<About />} />
+      </Routes> 
      
     </>
   )

@@ -22,7 +22,7 @@ export const Post = (props) => {
         <PostContext.Provider value={data}>
             <Layout>
             {data.map((post) => (
-                <article className='post' key={post.id}>
+                <article className='post bg-white shadow-md rounded-lg p-6 my-4' key={post.id}>
                     <div className='cover-container'>
                        <img src={post.cover} alt={post.title} />
                      </div>

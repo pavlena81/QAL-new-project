@@ -1,3 +1,5 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../Navbar/Navbar.css'
 import viteLogo from '/vite.svg'
 
@@ -7,17 +9,18 @@ export const Navbar = () => {
     return (
         <>
             <div className='container'>
-            <header className='navbar'>
+            <header className='navbar bg-rebeccapurple text-white flex items-center font-helvetica font-light'>
                 
-                <div className='navbar__title navbar__item'>
+                <div className='navbar__title navbar__item text-xl'>
                     <a href="https://vitejs.dev" target="_blank">
-                        <img src={viteLogo} className="logo" alt="Vite logo" />
+                        <img src={viteLogo} className="logo h-6" alt="Vite logo" />
                     </a>
                 </div>
-                <div className='navbar__item'>About Us</div>
-                <div className='navbar__item'>Contact</div>
+                <NavLink className='navbar__item py-2 cursor-pointer' to="/">Home</NavLink>
+                <NavLink className='navbar__item py-2 cursor-pointer' to="/about">About</NavLink>
+                <NavLink className='navbar__item py-2 cursor-pointer' to="/galleries">Gallery</NavLink>
                 
-                <div className='navbar__item'>Help</div> 
+                <NavLink className='navbar__item py-2 cursor-pointer' to="/blogs">BlogInfo</NavLink> 
                     
             </header></div>
         </>
