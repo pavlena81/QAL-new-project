@@ -5,7 +5,8 @@ import { Header } from './components/Header/Header'
 import { MyBlogs } from "./pages/Blogs";
 import { Home } from "./pages/Home";
 import { Galleries } from "./pages/Galleries";
-import {About} from "./pages/About"
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
 import './App.css'
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/blogs" element={<MyBlogs />} /> 
         <Route path="/galleries" element={<Galleries />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact/> } />
       </Routes> 
      
     </>

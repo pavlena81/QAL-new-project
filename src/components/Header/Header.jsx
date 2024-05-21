@@ -30,6 +30,7 @@ export const Header = () => {
                 <NavLink className='text-xl font-semibold leading-6 text-white py-2 cursor-pointer' to="/about">About</NavLink>
                 <NavLink className='text-xl font-semibold leading-6 text-white py-2 cursor-pointer' to="/galleries">Gallery</NavLink>
                 <NavLink className='text-xl font-semibold leading-6 text-white py-2 cursor-pointer' to="/blogs">BlogInfo</NavLink> 
+                <NavLink className='text-xl font-semibold leading-6 text-white py-2 cursor-pointer' to="/contact">Contact</NavLink> 
             </header>
        
     )
