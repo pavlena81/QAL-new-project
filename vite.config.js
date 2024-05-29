@@ -7,6 +7,7 @@ import react from '@vitejs/plugin-react'
 // })
 
 export default defineConfig({
+  base: '/QAL-new-project/',
   plugins: [
     { enforce: 'pre', ...mdx() },
     react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
