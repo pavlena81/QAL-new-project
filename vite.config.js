@@ -6,10 +6,20 @@ import react from '@vitejs/plugin-react'
 //   plugins: [react()],
 // })
 
+// export default defineConfig({
+//   base: '/QAL-new-project/',
+//   plugins: [
+//     { enforce: 'pre', ...mdx() },
+//     react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
+//   ],
+// }) 
+
 export default defineConfig({
   base: '/QAL-new-project/',
-  plugins: [
-    { enforce: 'pre', ...mdx() },
-    react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
-  ],
-})
+  plugins: [react()],
+  server: {
+    mimeTypes: {
+      'application/javascript': ['js', 'jsx']
+    }
+  }
+});
