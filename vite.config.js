@@ -10,7 +10,6 @@ export default defineConfig({
   plugins: [   
     react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
   ],
-  base: '/QAL-new-project/',
   
 }) 
 
