@@ -1,4 +1,5 @@
 import reactLogo from '../assets/react.svg'
+import { Footer } from '../components/Footer/Footer';
 
 const jsxElement = <h1>I am a JSX element</h1>;
 
@@ -39,7 +40,7 @@ export const About = ({ }) => {
         {jsxElement}
         {header}
         {newFragment}
-
+        <Footer/>
         </main >
     )
 }
